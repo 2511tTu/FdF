@@ -28,16 +28,17 @@ libmlx:
 	@$(CC) $(CFLAGS) -o $@ -c $< $(HEADERS) && printf "Compiling: $(notdir $<)"
 
 $(NAME): $(OBJS)
-	make -C FT_LIBRARY
+	@make -C FT_LIBRARY --no-print-directory
 	@$(CC) $(OBJS) $(LIBS) ft_library.a $(HEADERS) -o $(NAME)
+	@echo "$(NAME) built successfully"
 
 clean:
 	@rm -f $(OBJS)
-	cd FT_LIBRARY && $(MAKE) clean
+	@cd FT_LIBRARY && $(MAKE) clean --no-print-directory
 
 fclean: clean
 	@rm -f $(NAME) ft_library.a
-	cd FT_LIBRARY && $(MAKE) fclean
+	@cd FT_LIBRARY && $(MAKE) fclean --no-print-directory
 
 re: clean all
 
