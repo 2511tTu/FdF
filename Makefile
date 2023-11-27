@@ -39,6 +39,7 @@ clean:
 fclean: clean
 	@rm -f $(NAME) ft_library.a
 	@cd FT_LIBRARY && $(MAKE) fclean --no-print-directory
+	@cd MLX42 && rm -rf build
 
 re: clean all
 
