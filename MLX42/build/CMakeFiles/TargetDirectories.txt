@@ -1,3 +1,0 @@
-/nfs/homes/zzaludov/FdF/MLX42/build/CMakeFiles/mlx42.dir
-/nfs/homes/zzaludov/FdF/MLX42/build/CMakeFiles/edit_cache.dir
-/nfs/homes/zzaludov/FdF/MLX42/build/CMakeFiles/rebuild_cache.dir
